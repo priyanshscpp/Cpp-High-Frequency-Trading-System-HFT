@@ -1,0 +1,35 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/hpts_main.dir/src/Api.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/Api.cpp.o.d"
+  "CMakeFiles/hpts_main.dir/src/Boost_WebSocket/BSocket.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/Boost_WebSocket/BSocket.cpp.o.d"
+  "CMakeFiles/hpts_main.dir/src/Custom_WebSocket/CParser.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/Custom_WebSocket/CParser.cpp.o.d"
+  "CMakeFiles/hpts_main.dir/src/Custom_WebSocket/CSocket.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/Custom_WebSocket/CSocket.cpp.o.d"
+  "CMakeFiles/hpts_main.dir/src/Socket.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/Socket.cpp.o.d"
+  "CMakeFiles/hpts_main.dir/src/Trader.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/Trader.cpp.o.d"
+  "CMakeFiles/hpts_main.dir/src/WebSocketpp/Socketpp.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/WebSocketpp/Socketpp.cpp.o.d"
+  "CMakeFiles/hpts_main.dir/src/main.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/main.cpp.o.d"
+  "CMakeFiles/hpts_main.dir/src/market_data/MockMarketDataSource.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/market_data/MockMarketDataSource.cpp.o.d"
+  "CMakeFiles/hpts_main.dir/src/oms/OrderManager.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/oms/OrderManager.cpp.o.d"
+  "CMakeFiles/hpts_main.dir/src/risk_management/RiskManager.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/risk_management/RiskManager.cpp.o.d"
+  "CMakeFiles/hpts_main.dir/src/strategies/MeanReversionStrategy.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/strategies/MeanReversionStrategy.cpp.o.d"
+  "CMakeFiles/hpts_main.dir/src/strategies/MomentumStrategy.cpp.o"
+  "CMakeFiles/hpts_main.dir/src/strategies/MomentumStrategy.cpp.o.d"
+  "hpts_main"
+  "hpts_main.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/hpts_main.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

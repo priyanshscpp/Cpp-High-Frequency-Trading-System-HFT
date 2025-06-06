@@ -1,0 +1,8 @@
+/app/build/CMakeFiles/hpts_main.dir
+/app/build/CMakeFiles/test.dir
+/app/build/CMakeFiles/edit_cache.dir
+/app/build/CMakeFiles/rebuild_cache.dir
+/app/build/CMakeFiles/list_install_components.dir
+/app/build/CMakeFiles/install.dir
+/app/build/CMakeFiles/install/local.dir
+/app/build/CMakeFiles/install/strip.dir

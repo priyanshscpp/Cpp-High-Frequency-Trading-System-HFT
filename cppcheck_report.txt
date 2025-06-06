@@ -1,0 +1,88 @@
+src/Api.cpp:14:2: warning: Class 'Api' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor]
+ m_socket = new BSocket();
+ ^
+src/Api.cpp:14:2: warning: Class 'Api' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq]
+ m_socket = new BSocket();
+ ^
+src/BSocket.cpp:25:9: warning: Class 'BSocket' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor]
+        m_ws = new websocket::stream<beast::ssl_stream<tcp::socket>>(ioc, ctx);
+        ^
+src/BSocket.cpp:25:9: warning: Class 'BSocket' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq]
+        m_ws = new websocket::stream<beast::ssl_stream<tcp::socket>>(ioc, ctx);
+        ^
+src/Boost_WebSocket/BSocket.hpp:14:0: information: Include file: "Socket.hpp" not found. [missingInclude]
+#include "Socket.hpp"
+^
+src/Boost_WebSocket/BSocket.cpp:24:9: performance: Variable 'm_ws' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+        m_ws = std::make_unique<websocket::stream<beast::ssl_stream<tcp::socket>>>(ioc, ctx);
+        ^
+src/Custom_WebSocket/CParser.hpp:1:0: information: Include file: "utility.h" not found. [missingInclude]
+#include "utility.h"
+^
+src/Custom_WebSocket/CParser.cpp:11:1: error: Found an exit path from function with non-void return type that has missing return statement [missingReturn]
+}
+^
+src/Custom_WebSocket/CSocket.hpp:1:0: information: Include file: "utility.hpp" not found. [missingInclude]
+#include "utility.hpp"
+^
+src/Custom_WebSocket/CSocket.cpp:42:26: style: C-style pointer casting [cstyleCast]
+    if (connect(m_sock, (struct sockaddr*)&server_addr, sizeof(server_addr)) < 0) {
+                         ^
+src/Custom_WebSocket/CSocket.cpp:19:21: style: Variable 'server' can be declared as pointer to const [constVariablePointer]
+    struct hostent* server = gethostbyname(HOST.c_str());
+                    ^
+src/Trader.cpp:182:2: warning: Class 'Trader' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor]
+ m_api = new Api();
+ ^
+src/Trader.cpp:182:2: warning: Class 'Trader' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq]
+ m_api = new Api();
+ ^
+src/Trader.cpp:351:68: performance: Function parameter 'inst' should be passed by const reference. [passedByValue]
+                  int status = handlePlaceOrder([this](std::string inst, double price, int quant) {
+                                                                   ^
+src/Trader.cpp:361:69: performance: Function parameter 'order_id' should be passed by const reference. [passedByValue]
+                  int status = handleCancelOrder([this](std::string order_id) {
+                                                                    ^
+src/Trader.cpp:371:69: performance: Function parameter 'order_id' should be passed by const reference. [passedByValue]
+                  int status = handleModifyOrder([this](std::string order_id, double price, int quant) {
+                                                                    ^
+src/Trader.cpp:381:70: performance: Function parameter 'inst' should be passed by const reference. [passedByValue]
+                  int status = handleGetOrderBook([this](std::string inst, int depth) {
+                                                                     ^
+src/Trader.cpp:391:56: performance: Function parameter 'inst' should be passed by const reference. [passedByValue]
+    int status = handleViewPosition([this](std::string inst) {
+                                                       ^
+src/Trader.cpp:401:68: performance: Function parameter 'kind' should be passed by const reference. [passedByValue]
+                  int status = handleMarketData([this](std::string kind, int type) {
+                                                                   ^
+src/Trader.cpp:411:54: performance: Function parameter 'kind' should be passed by const reference. [passedByValue]
+    int status = handleOpenOrders([this](std::string kind) {
+                                                     ^
+src/WebSocketpp/Socketpp.hpp:12:0: information: Include file: "Socket.hpp" not found. [missingInclude]
+#include "Socket.hpp"
+^
+src/BSocket.hpp:24:1: error: The one definition rule is violated, different classes/structs have the same name 'BSocket' [ctuOneDefinitionRuleViolation]
+class BSocket: public Socket{
+^
+src/Boost_WebSocket/BSocket.hpp:24:1: note: The one definition rule is violated, different classes/structs have the same name 'BSocket'
+class BSocket: public Socket{
+^
+src/BSocket.hpp:24:1: note: The one definition rule is violated, different classes/structs have the same name 'BSocket'
+class BSocket: public Socket{
+^
+src/Socketpp.hpp:61:1: error: The one definition rule is violated, different classes/structs have the same name 'Socketpp' [ctuOneDefinitionRuleViolation]
+class Socketpp: public Socket{
+^
+src/WebSocketpp/Socketpp.hpp:61:1: note: The one definition rule is violated, different classes/structs have the same name 'Socketpp'
+class Socketpp: public Socket{
+^
+src/Socketpp.hpp:61:1: note: The one definition rule is violated, different classes/structs have the same name 'Socketpp'
+class Socketpp: public Socket{
+^
+src/Custom_WebSocket/CParser.cpp:9:0: style: The function 'stof' is never used. [unusedFunction]
+std::vector<std::vector<uint8_t>> CParser::stof(const std::string& str){
+^
+src/Custom_WebSocket/CParser.cpp:14:0: style: The function 'ftos' is never used. [unusedFunction]
+std::string CParser::ftos(std::vector<std::vector<uint8_t>>& frames){
+^
+nofile:0:0: information: Active checkers: 161/592 (use --checkers-report=<filename> to see details) [checkersReport]
