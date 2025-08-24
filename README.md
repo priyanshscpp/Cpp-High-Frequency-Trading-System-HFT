@@ -6,6 +6,36 @@
 
 A high-frequency trading (HFT) system built in C++ for ultra-low latency order execution targeting cryptocurrency derivatives markets via Deribit's exchange APIs. Engineered to achieve microsecond-level latency for critical path operations while maintaining robustness under extreme market volatility (10,000+ orders/sec).
 
+📺 **Watch the Project Overview**: [High-Performance Trading Backend Demo](https://www.youtube.com/watch?v=LjLToXJV6lk)
+
+## 📋 Project Overview
+
+This High-Frequency Trading (HFT) System represents a sophisticated C++ implementation designed for institutional-grade cryptocurrency derivatives trading. The system is built from the ground up to address the unique challenges of modern electronic trading:
+
+### 🎯 **Core Mission**
+- **Ultra-Low Latency**: Achieve microsecond-level performance for critical trading operations
+- **High Throughput**: Handle 10,000+ orders per second under extreme market conditions
+- **Institutional Grade**: Provide the reliability and performance expected by professional trading firms
+- **Real-Time Processing**: Deliver sub-millisecond market data and order execution
+
+### 🏛️ **Target Markets**
+- **Spot Trading**: Direct cryptocurrency purchases and sales
+- **Futures Contracts**: Leveraged derivatives with sophisticated risk management
+- **Options Trading**: Complex derivative instruments with advanced pricing models
+- **Cross-Exchange Arbitrage**: Multi-venue trading opportunities
+
+### 🔬 **Technical Innovation**
+- **Custom WebSocket Implementation**: Built from scratch for maximum performance
+- **Lock-Free Data Structures**: Eliminate contention in high-frequency scenarios
+- **Hardware-Accelerated Crypto**: Leverage Intel AES-NI and ARMv8 crypto instructions
+- **Zero-Copy Message Processing**: Minimize memory allocation overhead
+
+### 🚀 **Performance Characteristics**
+- **Order Placement Latency**: <100 microseconds end-to-end
+- **Market Data Processing**: Real-time tick processing with <1ms latency
+- **Risk Calculation**: Sub-millisecond position and PnL updates
+- **Connection Resilience**: Automatic failover and reconnection handling
+
 ## 🚀 Features
 
 - **Ultra-Low Latency**: Microsecond-level performance for critical trading operations
