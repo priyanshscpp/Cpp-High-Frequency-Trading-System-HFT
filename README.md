@@ -1,3 +1,4 @@
+<img width="1354" height="750" alt="image" src="https://github.com/user-attachments/assets/b3e021d3-a116-4874-a350-d7dbfd9ade47" />
 # High-Performance Trading Backend in C++
 
 [![C++](https://img.shields.io/badge/C++-17-blue.svg)](https://isocpp.org/)
