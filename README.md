@@ -1,4 +1,3 @@
-<img width="1354" height="750" alt="image" src="https://github.com/user-attachments/assets/b3e021d3-a116-4874-a350-d7dbfd9ade47" />
 # High-Performance Trading Backend in C++
 
 [![C++](https://img.shields.io/badge/C++-17-blue.svg)](https://isocpp.org/)
@@ -8,6 +7,9 @@
 A high-frequency trading (HFT) system built in C++ for ultra-low latency order execution targeting cryptocurrency derivatives markets via Deribit's exchange APIs. Engineered to achieve microsecond-level latency for critical path operations while maintaining robustness under extreme market volatility (10,000+ orders/sec).
 
 📺 **Watch the Project Overview**: [High-Performance Trading Backend Demo](https://www.youtube.com/watch?v=LjLToXJV6lk)
+
+<img width="1354" height="750" alt="image" src="https://github.com/user-attachments/assets/b3e021d3-a116-4874-a350-d7dbfd9ade47" />
+
 
 ## 📋 Project Overview
 
